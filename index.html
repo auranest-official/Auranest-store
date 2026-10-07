@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AuraNest — Beautiful Things for Beautiful Spaces</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;color:#3d352f;background:#fbf8f3;line-height:1.6}
+header{position:sticky;top:0;background:rgba(251,248,243,.96);border-bottom:1px solid #e8dfd5;z-index:10}
+.nav{max-width:1180px;margin:auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:Georgia,serif;font-size:28px;font-weight:bold;letter-spacing:.5px;color:#5b493c}
+.logo span{font-size:12px;display:block;letter-spacing:3px;text-transform:uppercase;color:#9a806c}
+nav a{color:#4d4037;text-decoration:none;margin-left:28px;font-size:14px}
+.hero{max-width:1180px;margin:auto;padding:85px 24px 75px;display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+.hero h1{font:normal 64px/1.08 Georgia,serif;color:#4b3b30;margin:15px 0}
+.hero p{max-width:510px;color:#776a60;font-size:18px}
+.badge{display:inline-block;padding:8px 14px;background:#eee4d8;border-radius:30px;color:#775f4d;font-size:12px;letter-spacing:1.5px;text-transform:uppercase}
+.btn{display:inline-block;margin-top:28px;padding:13px 24px;background:#5c493b;color:white;text-decoration:none;border-radius:5px;font-size:14px}
+.hero-art{height:430px;border-radius:22px;background:linear-gradient(145deg,#d9c8b7,#f1e7dc);display:flex;align-items:center;justify-content:center;box-shadow:0 18px 45px rgba(74,55,40,.12)}
+.hero-art div{width:68%;height:72%;border:1px solid rgba(91,73,60,.3);display:flex;align-items:center;justify-content:center;text-align:center;font:32px Georgia,serif;color:#725e4f}
+section{max-width:1180px;margin:auto;padding:70px 24px}
+.section-title{text-align:center;margin-bottom:38px}
+.section-title h2{font:normal 38px Georgia,serif;color:#4b3b30}
+.section-title p{color:#887a70;margin-top:8px}
+.categories,.products{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:#fff;border:1px solid #eee5dc;border-radius:14px;overflow:hidden}
+.category-img,.product-img{height:210px;background:linear-gradient(145deg,#e7d9cc,#f5eee7);display:flex;align-items:center;justify-content:center;color:#7d6858;font:24px Georgia,serif}
+.card-content{padding:18px}
+.card h3{font-size:17px;color:#514238}
+.card p{font-size:13px;color:#8b7d72;margin-top:4px}
+.price{margin-top:12px;font-weight:bold;color:#624e3e}
+.feature{background:#eee4d8}
+.feature-inner{max-width:1180px;margin:auto;padding:75px 24px;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.feature h2{font:normal 43px Georgia,serif;color:#4b3b30}
+.feature p{color:#75675d;margin-top:15px}
+.gift{background:#5b493c;color:white;border-radius:18px;padding:50px;text-align:center}
+.gift h2{font:normal 40px Georgia,serif}
+.gift p{color:#e8ddd3;margin:10px auto;max-width:600px}
+.gift .btn{background:#f7eee5;color:#5b493c}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}
+.why div{padding:28px;background:white;border:1px solid #eee5dc;border-radius:12px}
+.why h3{margin-bottom:8px}
+.why p{font-size:14px;color:#82756b}
+.contact{text-align:center;background:#f0e8df}
+footer{background:#43372f;color:#eee2d7;padding:35px 24px;text-align:center}
+footer .logo{color:#fff}
+footer p{font-size:13px;margin-top:10px;color:#cdbfb3}
+@media(max-width:800px){
+nav{display:none}.hero,.feature-inner{grid-template-columns:1fr}.hero h1{font-size:46px}
+.categories,.products{grid-template-columns:repeat(2,1fr)}.why{grid-template-columns:1fr}
+.hero-art{height:320px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="nav">
+<div class="logo">AuraNest<span>Beautifully Curated Living</span></div>
+<nav><a href="#home">Home</a><a href="#shop">Shop</a><a href="#art">Art</a><a href="#gifts">Gifts</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</div>
+</header>
+
+<main id="home">
+<section class="hero">
+<div>
+<span class="badge">Welcome to AuraNest</span>
+<h1>Beautiful Things for Beautiful Spaces.</h1>
+<p>Discover thoughtfully chosen home accessories, clever kitchen finds, hand-painted canvas art and beautiful gifts — all in one place.</p>
+<a class="btn" href="#shop">Explore Collection</a>
+</div>
+<div class="hero-art"><div>AuraNest<br><small>Home • Art • Gifts</small></div></div>
+</section>
+
+<section id="shop">
+<div class="section-title"><h2>Shop by Category</h2><p>Find something special for every corner and every occasion.</p></div>
+<div class="categories">
+<div class="card"><div class="category-img">Home Décor</div><div class="card-content"><h3>Home Accessories</h3><p>Elegant pieces for your space.</p></div></div>
+<div class="card"><div class="category-img">Kitchen</div><div class="card-content"><h3>Kitchen Gadgets</h3><p>Useful finds with beautiful design.</p></div></div>
+<div class="card"><div class="category-img">Canvas Art</div><div class="card-content"><h3>Hand-Painted Art</h3><p>Unique artwork made with care.</p></div></div>
+<div class="card"><div class="category-img">Gifts</div><div class="card-content"><h3>Gifts & Gift Cards</h3><p>Thoughtful surprises for loved ones.</p></div></div>
+</div>
+</section>
+
+<section>
+<div class="section-title"><h2>Featured Finds</h2><p>A few beautiful pieces from our collection.</p></div>
+<div class="products">
+<div class="card"><div class="product-img">Decor Piece</div><div class="card-content"><h3>Elegant Home Accent</h3><div class="price">PKR —</div></div></div>
+<div class="card"><div class="product-img">Kitchen Find</div><div class="card-content"><h3>Smart Kitchen Gadget</h3><div class="price">PKR —</div></div></div>
+<div class="card"><div class="product-img">Canvas</div><div class="card-content"><h3>Hand-Painted Canvas</h3><div class="price">PKR —</div></div></div>
+<div class="card"><div class="product-img">Gift</div><div class="card-content"><h3>Curated Gift Box</h3><div class="price">PKR —</div></div></div>
+</div>
+</section>
+
+<div class="feature" id="art">
+<div class="feature-inner">
+<div><span class="badge">Made with heart</span><h2>Art that makes your space feel like home.</h2><p>Explore our hand-painted canvas collection — each piece is created to add warmth, personality and a little magic to your walls.</p><a class="btn" href="#contact">Enquire About Art</a></div>
+<div class="hero-art"><div>Hand-Painted<br>Collection</div></div>
+</div>
+</div>
+
+<section id="gifts">
+<div class="gift">
+<h2>Give an AuraNest Gift Card</h2>
+<p>Let someone special choose something they truly love. Perfect for birthdays, celebrations and thoughtful little surprises.</p>
+<a class="btn" href="#contact">Get a Gift Card</a>
+</div>
+</section>
+
+<section id="about">
+<div class="section-title"><h2>Why AuraNest?</h2><p>Simple, thoughtful and beautifully curated.</p></div>
+<div class="why">
+<div><h3>Curated with Care</h3><p>We look for pieces that feel useful, beautiful and worth keeping.</p></div>
+<div><h3>Unique Finds</h3><p>From everyday essentials to handmade art, discover something different.</p></div>
+<div><h3>Made for Gifting</h3><p>Beautiful choices for your home and memorable moments.</p></div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="section-title"><h2>Let’s Connect</h2><p>For orders, custom canvas enquiries or gift cards, get in touch with AuraNest.</p><a class="btn" href="mailto:hello@auranest.com">Contact AuraNest</a></div>
+</section>
+</main>
+
+<footer>
+<div class="logo">AuraNest</div>
+<p>Beautiful Things. Thoughtfully Chosen.</p>
+<p>© 2026 AuraNest. All rights reserved.</p>
+</footer>
+</body>
+</html>
